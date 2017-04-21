@@ -1,18 +1,65 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import { Link } from 'react-router';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <div className="container">
+          <div className="col-sm-6">
+            <ul className="nav nav-pills nav-stacked">
+              <li>
+                <a href="#">Address</a>
+              </li>
+              <li>
+                <a href="#">App</a>
+              </li>
+              <li>
+                <a href="#">Boolean</a>
+              </li>
+              <li>
+                <a href="#">Color</a>
+              </li>
+              <li>
+                <a href="#">Date</a>
+              </li>
+              <li>
+                <a href="#">Friends</a>
+              </li>
+              <li>
+                <a href="#">Lorem Flickr</a>
+              </li>
+              <li>
+                <a href="#">Lorem</a>
+              </li>
+              <li>
+                <a href="#">Name</a>
+              </li>
+              <li>
+                <a href="#">Number</a>
+              </li>
+              <li>
+                <a href="#">Placeholdit</a>
+              </li>
+              <li>
+                <a href="#">Rock Band</a>
+              </li>
+              <li>
+                <a href="#">Slack Emoji</a>
+              </li>
+              <li>
+                <a href="#">Star Wars</a>
+              </li>
+              <li>
+                <a href="#">Superhero</a>
+              </li>
+              <li>
+                <a href="#">Time</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
