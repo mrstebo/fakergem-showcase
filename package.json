@@ -1,38 +1,24 @@
 {
   "name": "fakergem-showcase",
-  "version": "1.0.0",
-  "description": "A showcase for the fakergem package",
-  "main": "index.js",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mrstebo/fakergem-showcase.git"
-  },
-  "keywords": [
-    "fakergem",
-    "showcase"
-  ],
-  "author": {
-    "name": "Steven Atkinson",
-    "email": "mrstebouk@gmail.com",
-    "url": "http://mrstebo.co.uk"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mrstebo/fakergem-showcase/issues"
-  },
-  "homepage": "https://github.com/mrstebo/fakergem-showcase#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "foreman": "^2.0.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-router": "^4.1.1"
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "nf start",
+    "start:react": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": "7.7.3"
   }
 }
