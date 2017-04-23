@@ -5,14 +5,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="container">
-          <div className="col-sm-6">
-            <FakerLinks />
-          </div>
-          <div className="col-sm-6">
-            {this.props.children}
-          </div>
+      <div className="ui grid">
+        <div className="four wide column">
+          <FakerLinks />
+        </div>
+        <div className="twelve wide stretched column">
+          {this.props.children}
         </div>
       </div>
     );
