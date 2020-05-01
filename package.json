@@ -14,7 +14,8 @@
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "react-router-redux": "^4.0.8",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "react-scripts": "0.9.5",
@@ -26,9 +27,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm install --only=dev && npm run build"
+    "heroku-postbuild": "npm install --only=dev && npm run build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": "7.7.3"
-  }
+  },
+  "snyk": true
 }
